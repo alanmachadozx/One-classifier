@@ -73,8 +73,10 @@ CMakeFiles/program.dir/src/main.cpp.o: /home/alan/Documentos/One-classifier/src/
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/c++/16/algorithm \
   /usr/include/c++/16/backward/binders.h \
   /usr/include/c++/16/bit \
+  /usr/include/c++/16/bits/algorithmfwd.h \
   /usr/include/c++/16/bits/alloc_traits.h \
   /usr/include/c++/16/bits/allocator.h \
   /usr/include/c++/16/bits/basic_ios.h \
@@ -119,28 +121,39 @@ CMakeFiles/program.dir/src/main.cpp.o: /home/alan/Documentos/One-classifier/src/
   /usr/include/c++/16/bits/predefined_ops.h \
   /usr/include/c++/16/bits/ptr_traits.h \
   /usr/include/c++/16/bits/range_access.h \
+  /usr/include/c++/16/bits/ranges_algo.h \
+  /usr/include/c++/16/bits/ranges_algobase.h \
   /usr/include/c++/16/bits/ranges_base.h \
   /usr/include/c++/16/bits/ranges_cmp.h \
   /usr/include/c++/16/bits/ranges_util.h \
   /usr/include/c++/16/bits/requires_hosted.h \
+  /usr/include/c++/16/bits/sstream.tcc \
   /usr/include/c++/16/bits/std_abs.h \
   /usr/include/c++/16/bits/stdexcept_except.h \
   /usr/include/c++/16/bits/stdexcept_throw.h \
   /usr/include/c++/16/bits/stdexcept_throwfwd.h \
+  /usr/include/c++/16/bits/stl_algo.h \
   /usr/include/c++/16/bits/stl_algobase.h \
+  /usr/include/c++/16/bits/stl_bvector.h \
   /usr/include/c++/16/bits/stl_construct.h \
   /usr/include/c++/16/bits/stl_function.h \
+  /usr/include/c++/16/bits/stl_heap.h \
   /usr/include/c++/16/bits/stl_iterator.h \
   /usr/include/c++/16/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/16/bits/stl_iterator_base_types.h \
   /usr/include/c++/16/bits/stl_pair.h \
+  /usr/include/c++/16/bits/stl_tempbuf.h \
+  /usr/include/c++/16/bits/stl_uninitialized.h \
+  /usr/include/c++/16/bits/stl_vector.h \
   /usr/include/c++/16/bits/streambuf.tcc \
   /usr/include/c++/16/bits/streambuf_iterator.h \
   /usr/include/c++/16/bits/string_view.tcc \
   /usr/include/c++/16/bits/stringfwd.h \
+  /usr/include/c++/16/bits/uniform_int_dist.h \
   /usr/include/c++/16/bits/uses_allocator.h \
   /usr/include/c++/16/bits/uses_allocator_args.h \
   /usr/include/c++/16/bits/utility.h \
+  /usr/include/c++/16/bits/vector.tcc \
   /usr/include/c++/16/bits/version.h \
   /usr/include/c++/16/cctype \
   /usr/include/c++/16/cerrno \
@@ -169,7 +182,10 @@ CMakeFiles/program.dir/src/main.cpp.o: /home/alan/Documentos/One-classifier/src/
   /usr/include/c++/16/new \
   /usr/include/c++/16/numbers \
   /usr/include/c++/16/ostream \
+  /usr/include/c++/16/pstl/execution_defs.h \
+  /usr/include/c++/16/pstl/glue_algorithm_defs.h \
   /usr/include/c++/16/pstl/pstl_config.h \
+  /usr/include/c++/16/sstream \
   /usr/include/c++/16/stdexcept \
   /usr/include/c++/16/streambuf \
   /usr/include/c++/16/string \
@@ -178,6 +194,7 @@ CMakeFiles/program.dir/src/main.cpp.o: /home/alan/Documentos/One-classifier/src/
   /usr/include/c++/16/tuple \
   /usr/include/c++/16/type_traits \
   /usr/include/c++/16/typeinfo \
+  /usr/include/c++/16/vector \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/atomic_word.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -244,8 +261,6 @@ program: /usr/lib/Scrt1.o \
 
 /usr/lib/libc_nonshared.a:
 
-/usr/lib/ld-linux-x86-64.so.2:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic.so:
 
 /usr/lib/libm.so:
@@ -261,8 +276,6 @@ program: /usr/lib/Scrt1.o \
 /usr/include/sys/cdefs.h:
 
 /usr/include/pthread.h:
-
-/usr/include/locale.h:
 
 /usr/include/linux/sched/types.h:
 
@@ -290,9 +303,13 @@ program: /usr/lib/Scrt1.o \
 
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
+/usr/include/c++/16/vector:
+
 /usr/include/c++/16/typeinfo:
 
 /usr/include/c++/16/stdexcept:
+
+/usr/include/c++/16/sstream:
 
 /usr/include/c++/16/ostream:
 
@@ -300,9 +317,9 @@ program: /usr/lib/Scrt1.o \
 
 /usr/include/c++/16/limits:
 
-/usr/include/c++/16/istream:
+/usr/include/c++/16/pstl/execution_defs.h:
 
-/usr/include/c++/16/iostream:
+/usr/include/c++/16/istream:
 
 /usr/lib/libc.so.6:
 
@@ -342,13 +359,13 @@ program: /usr/lib/Scrt1.o \
 
 /usr/include/c++/16/bits/version.h:
 
-/usr/include/c++/16/bits/uses_allocator.h:
+/usr/include/c++/16/iostream:
+
+/usr/include/c++/16/bits/uniform_int_dist.h:
 
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/16/bits/stringfwd.h:
-
-/usr/include/c++/16/bits/string_view.tcc:
 
 /usr/include/c++/16/bits/streambuf_iterator.h:
 
@@ -356,21 +373,47 @@ program: /usr/lib/Scrt1.o \
 
 /usr/include/c++/16/bits/streambuf.tcc:
 
+/usr/include/locale.h:
+
+/usr/include/c++/16/bits/stl_vector.h:
+
+/usr/include/c++/16/bits/string_view.tcc:
+
+/usr/include/c++/16/bits/stl_uninitialized.h:
+
 /usr/include/c++/16/bits/stl_pair.h:
 
 /usr/include/c++/16/bits/stl_iterator_base_types.h:
 
-/usr/include/c++/16/bits/stl_iterator_base_funcs.h:
-
 /usr/include/c++/16/bits/stl_iterator.h:
+
+/usr/lib/ld-linux-x86-64.so.2:
+
+/usr/include/c++/16/bits/stl_heap.h:
 
 /usr/include/sched.h:
 
 /usr/include/c++/16/bits/stl_function.h:
 
+/usr/include/c++/16/bits/uses_allocator.h:
+
+/usr/include/c++/16/bits/stl_bvector.h:
+
+/usr/include/c++/16/bits/stl_algobase.h:
+
+/usr/include/c++/16/bits/stl_algo.h:
+
+/usr/include/c++/16/bits/stdexcept_throw.h:
+
 /usr/include/ctype.h:
 
 /usr/include/bits/waitflags.h:
+
+/usr/include/c++/16/ext/atomicity.h:
+
+/usr/include/c++/16/bits/stdexcept_except.h:
+
+/usr/include/bits/types/struct_FILE.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so:
 
@@ -379,6 +422,8 @@ program: /usr/lib/Scrt1.o \
 /usr/include/bits/types/clockid_t.h:
 
 /usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/c++/16/bits/ranges_algobase.h:
 
 /usr/include/bits/types/__locale_t.h:
 
@@ -400,6 +445,16 @@ program: /usr/lib/Scrt1.o \
 
 /usr/include/bits/thread-shared-types.h:
 
+/usr/include/c++/16/bits/sstream.tcc:
+
+/usr/include/endian.h:
+
+/usr/include/c++/16/cwctype:
+
+/usr/include/c++/16/bits/std_abs.h:
+
+/usr/include/c++/16/bits/charconv.h:
+
 /usr/include/bits/setjmp.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
@@ -419,6 +474,8 @@ program: /usr/lib/Scrt1.o \
 /usr/include/bits/time.h:
 
 /usr/include/asm/bitsperlong.h:
+
+/usr/include/c++/16/bits/stl_tempbuf.h:
 
 /usr/include/bits/types/locale_t.h:
 
@@ -446,6 +503,8 @@ program: /usr/lib/Scrt1.o \
 
 /usr/include/stdio.h:
 
+/usr/include/c++/16/pstl/glue_algorithm_defs.h:
+
 /usr/include/c++/16/bits/functional_hash.h:
 
 /usr/include/asm-generic/errno.h:
@@ -453,14 +512,6 @@ program: /usr/lib/Scrt1.o \
 /usr/include/asm-generic/types.h:
 
 /usr/include/asm-generic/errno-base.h:
-
-/usr/include/endian.h:
-
-/usr/include/c++/16/cwctype:
-
-/usr/include/c++/16/bits/charconv.h:
-
-/usr/include/c++/16/bits/std_abs.h:
 
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
@@ -477,6 +528,8 @@ program: /usr/lib/Scrt1.o \
 /usr/include/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr-default.h:
+
+/usr/include/c++/16/bits/vector.tcc:
 
 /usr/include/bits/struct_rwlock.h:
 
@@ -532,6 +585,12 @@ program: /usr/lib/Scrt1.o \
 
 /usr/include/c++/16/bits/new_allocator.h:
 
+/usr/include/c++/16/streambuf:
+
+/usr/include/c++/16/bits/stdexcept_throwfwd.h:
+
+/usr/include/bits/select.h:
+
 /usr/include/bits/types/struct_timespec.h:
 
 /usr/include/bits/types/struct_tm.h:
@@ -564,6 +623,10 @@ program: /usr/lib/Scrt1.o \
 
 /usr/include/bits/wordsize.h:
 
+/usr/include/c++/16/algorithm:
+
+/usr/include/c++/16/bits/basic_ios.h:
+
 /usr/include/bits/types/wint_t.h:
 
 /usr/include/c++/16/backward/binders.h:
@@ -578,6 +641,10 @@ program: /usr/lib/Scrt1.o \
 
 /usr/include/c++/16/bit:
 
+/usr/include/c++/16/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/16/bits/algorithmfwd.h:
+
 /usr/include/bits/stdlib-float.h:
 
 /usr/include/bits/time64.h:
@@ -590,8 +657,6 @@ CMakeFiles/program.dir/src/main.cpp.o:
 
 /usr/include/c++/16/bits/nested_exception.h:
 
-/usr/include/c++/16/bits/basic_ios.h:
-
 /usr/include/c++/16/bits/basic_ios.tcc:
 
 /usr/include/c++/16/ios:
@@ -599,12 +664,6 @@ CMakeFiles/program.dir/src/main.cpp.o:
 /usr/include/c++/16/bits/basic_string.h:
 
 /usr/include/c++/16/bits/postypes.h:
-
-/usr/include/c++/16/ext/atomicity.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/c++/16/bits/stdexcept_except.h:
 
 /usr/include/c++/16/bits/basic_string.tcc:
 
@@ -686,6 +745,8 @@ CMakeFiles/program.dir/src/main.cpp.o:
 
 /usr/include/c++/16/bits/uses_allocator_args.h:
 
+/usr/include/c++/16/bits/ranges_algo.h:
+
 /usr/include/c++/16/bits/ranges_base.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h:
@@ -695,13 +756,3 @@ CMakeFiles/program.dir/src/main.cpp.o:
 /usr/include/bits/byteswap.h:
 
 /usr/include/c++/16/bits/requires_hosted.h:
-
-/usr/include/c++/16/bits/stdexcept_throw.h:
-
-/usr/include/c++/16/streambuf:
-
-/usr/include/bits/select.h:
-
-/usr/include/c++/16/bits/stdexcept_throwfwd.h:
-
-/usr/include/c++/16/bits/stl_algobase.h:
