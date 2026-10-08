@@ -1,0 +1,3 @@
+/home/alan/Documentos/One-classifier/build/CMakeFiles/program.dir
+/home/alan/Documentos/One-classifier/build/CMakeFiles/edit_cache.dir
+/home/alan/Documentos/One-classifier/build/CMakeFiles/rebuild_cache.dir
