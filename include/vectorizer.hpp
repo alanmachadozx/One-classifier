@@ -1,4 +1,6 @@
 #include <unordered_map>
 #include "../include/tokenizer.hpp"
 
-vector<int, string> vectorizer(vector<string> buffer);
+unordered_map<string, int>vectorizer(vector<string> buffer);
+vector<string> model_test();
+void view_frequency(vector<string> buffer);

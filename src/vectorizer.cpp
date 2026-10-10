@@ -1,13 +1,32 @@
 #include "../include/vectorizer.hpp"
+#include <unordered_map>
+#include <unordered_set>
 
+vector<string> model_trainer(){
+    vector<string> dataset = {
+        "trainer",
+        "test"
+    };
+    return dataset;
+}
 
-vector<int, string> vectorizer(vector<string> buffer){
-    
-    unordered_map<int, string> string_id;
+unordered_map<string, int> vectorizer(vector<string> buffer){
+
+    unordered_map<string, int> string_f;
     int idx = 0;
     for(string s: buffer){
-        string_id.insert({0, s});
+        string_f.insert({s, idx});
         idx++;
     }
-    
+    return string_f;
+}    
+
+void frequency(vector<string> buffer){
+    unordered_map<string, int> term_fr; 
+    for(string text: buffer){
+        unordered_set<string> unic_words(text.begin(), text.end());
+        for(string word: unic_words){
+            term_fr[word]++;
+        }
+    }
 }
