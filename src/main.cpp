@@ -5,6 +5,5 @@ int main(){
      cout << "Insert something:" << endl;
      getline(cin, text); 
      vector<string> buffer = text_correction(text);
-     vectorizer(buffer);
 }
 
