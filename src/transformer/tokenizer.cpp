@@ -1,4 +1,4 @@
-#include "../include/tokenizer.hpp"
+#include "../../include/tokenizer.hpp"
 
 vector<string> text_correction(string text){
     //The function converts the string to lowercase from beginning to end. 
@@ -12,7 +12,6 @@ vector<string> text_correction(string text){
    
     while(sentence >> word){
         buffer.push_back(word);
-        cout << word << endl;
     }
 
     return buffer;
