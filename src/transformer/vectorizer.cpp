@@ -2,11 +2,13 @@
 #include <unordered_map>
 #include <vector>
 
+//Iterates through the words in the JSON file's values, 
+//storing each word and its respective position in an unordered_map.
 unordered_map<string, int> dataset_map(){
-    json datset = read_dataset();
+    json dataset = read_dataset();
     unordered_map<string, int> string_id;
     int idx = 0;
-    for(auto& [intention, references] : datset.items()){
+    for(auto& references : dataset){
         for(const string& str: references){
 
             stringstream sentence(str);
@@ -14,7 +16,7 @@ unordered_map<string, int> dataset_map(){
             while (sentence >> word) {
                 if(string_id.find(word) == string_id.end()){
                     string_id.insert({word, idx});
-                        idx++;
+                    idx++;
                 }
             }
             
@@ -24,15 +26,16 @@ unordered_map<string, int> dataset_map(){
     return string_id;
 }
 
-bool is_trained(const string& word, unordered_map<string, int>& string_id){
+bool is_trained(const string& word, const unordered_map<string, int>& string_id){
     return string_id.find(word) != string_id.end();
 }
 
 void frequency(vector<string>& buffer){
     unordered_map<string, int> term_fr; 
-    unordered_map<string, int> vec_model = dataset_map(); 
+    const unordered_map<string, int>& vec_model = dataset_map(); 
     
     for(const string& text: buffer){
+        //selects only words that already exist in the vocabulary, discarding unknown words.
         if(is_trained(text, vec_model)){
             term_fr[text]++;
         }
@@ -43,3 +46,13 @@ void frequency(vector<string>& buffer){
     }
 }
 
+float tf_calculation(const unordered_map<string, int>& term_fr){
+    float size = term_fr.size();
+    float fr; 
+    for(auto it = term_fr.begin(); it != term_fr.end(); it++){
+        fr += it->second;
+    }
+
+    float tf = size/fr;
+    return tf;
+}

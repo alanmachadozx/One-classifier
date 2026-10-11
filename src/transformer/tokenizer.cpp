@@ -9,7 +9,7 @@ vector<string> text_correction(string text){
     string word;
     vector<string> buffer;
     stringstream sentence(text);
-   
+    //split the string in a buffer of words
     while(sentence >> word){
         buffer.push_back(word);
     }

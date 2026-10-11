@@ -1,4 +1,3 @@
-
 {
  "OPEN_APP": [
    "open the",
@@ -6,14 +5,12 @@
    "launch",
    "start"
  ],
-
  "CLOSE_APP": [
    "close the",
    "close",
    "quit",
    "exit"
  ],
-
  "SEARCH": [
    "search for",
    "search in web",
@@ -21,7 +18,6 @@
    "look for",
    "search in google"
  ],
-
  "ASK_GEMINI": [
    "gemini",
    "one",
@@ -29,7 +25,6 @@
    "one ai",
    "gemini ai"
  ],
- 
  "VIEW_TASKS": [
    "view tasks",
    "list tasks",
@@ -38,13 +33,11 @@
    "show my tasks",
    "What are my tasks?"
  ],
- 
  "ADD_TASK": [
    "create new task",
    "new task", 
    "make task"
   ],
-
   "VIEW_HISTORY": [
     "view history",
     "show commands history",
@@ -52,19 +45,16 @@
     "what did i do?",
     "show my commands"
   ],
-
   "PLAY_MUSIC": [
    "play music",
    "listen the music",
    "start music",
    "play"
   ],
-
   "UPDATE": [
     "update the system",
     "update"
   ],
-
   "NEXT_MUSIC": [
     "next music",
     "skip this music",
@@ -73,7 +63,6 @@
     "advance to next music",
     "advance music"
   ],
-
   "STOP_MUSIC": [
     "stop the music",
     "pause music",
@@ -81,21 +70,18 @@
     "stop music",
     "stop playing"
   ],
-
   "RESUME_MUSIC": [
     "resume music",
     "resume playing",
     "resume",
     "resume playing music"
   ],
-
   "UP_VOL": [
     "up the volume",
     "increase volume",
     "raise volume",
     "volume up"
   ],
-
   "DOWN_VOL": [
     "down the volume",
     "decrease volume",
