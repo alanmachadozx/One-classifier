@@ -16,3 +16,17 @@ vector<string> text_correction(string text){
 
     return buffer;
 }
+
+json read_dataset(){
+    ifstream json_file("src/dataset/dataset.json");
+
+    if(!json_file.is_open()){
+        cout << "Failed to open file" << endl;
+    }
+
+    json dataset;
+    json_file >> dataset;
+    json_file.close(); 
+
+    return dataset;
+}

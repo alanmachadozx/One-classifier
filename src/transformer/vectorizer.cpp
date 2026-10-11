@@ -2,26 +2,24 @@
 #include <unordered_map>
 #include <vector>
 
-vector<vector<string>> model_trainer(){
-    vector<vector<string>> dataset = {
-        {"make", "test"},
-        {"please", "test", "trainer"}
-    };
-    return dataset;
-}
-
-unordered_map<string, int> vectorizer(vector<vector<string>>& buffer){
-
+unordered_map<string, int> dataset_map(){
+    json datset = read_dataset();
     unordered_map<string, int> string_id;
     int idx = 0;
-    for(const vector<string>& str: buffer){
-        for(const string& word: str){
-            if(string_id.find(word) == string_id.end()){
-                string_id.insert({word, idx});
+    for(auto& [intention, references] : datset.items()){
+        for(const string& str: references){
+
+            stringstream sentence(str);
+            string word;
+            while (sentence >> word) {
+                if(string_id.find(word) == string_id.end()){
+                    string_id.insert({word, idx});
+                        idx++;
+                }
             }
-        }
-        
-        idx++;
+            
+        }    
+
     }
     return string_id;
 }
@@ -32,8 +30,7 @@ bool is_trained(const string& word, unordered_map<string, int>& string_id){
 
 void frequency(vector<string>& buffer){
     unordered_map<string, int> term_fr; 
-    vector<vector<string>> model = model_trainer();
-    unordered_map<string, int> vec_model = vectorizer(model); 
+    unordered_map<string, int> vec_model = dataset_map(); 
     
     for(const string& text: buffer){
         if(is_trained(text, vec_model)){
