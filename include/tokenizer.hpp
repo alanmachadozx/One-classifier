@@ -6,6 +6,7 @@
 #include <iostream>
 #include "nlohmann/json.hpp"
 #include <fstream>
+#include <cmath>
 
 using json = nlohmann::json;
 using namespace std;
