@@ -2,7 +2,9 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
+
 const json DATASET = read_dataset();
+
 //Iterates through the words in the JSON file's values, 
 //storing each word and its respective position in an unordered_map.
 unordered_map<string, int> dataset_map(){

@@ -1,7 +1,6 @@
 #include <unordered_map>
 #include "../include/tokenizer.hpp"
 
-
 unordered_map<string, int> dataset_map();
 vector<vector<string>> model_trainer();
 void frequency(vector<string>& buffer, const unordered_map<string, int>& vec_model);
