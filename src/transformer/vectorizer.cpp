@@ -8,6 +8,7 @@ unordered_map<string, int> dataset_map(){
     json dataset = read_dataset();
     unordered_map<string, int> string_id;
     int idx = 0;
+    int str_total = 0; //total number of sentences in the training set
     for(auto& references : dataset){
         for(const string& str: references){
 
@@ -19,7 +20,6 @@ unordered_map<string, int> dataset_map(){
                     idx++;
                 }
             }
-            
         }    
 
     }
@@ -30,10 +30,20 @@ bool is_trained(const string& word, const unordered_map<string, int>& string_id)
     return string_id.find(word) != string_id.end();
 }
 
-void frequency(vector<string>& buffer){
-    unordered_map<string, int> term_fr; 
-    const unordered_map<string, int>& vec_model = dataset_map(); 
+float tf_calculation(const unordered_map<string, int>& term_fr, const int& frequency){
+    float current_fr = frequency;
+    float all_fr = 0; 
     
+    for(auto it = term_fr.begin(); it != term_fr.end(); it++){
+        all_fr += it->second;
+    }
+
+    float tf = current_fr/all_fr;
+    return tf;
+}
+
+void frequency(vector<string>& buffer, const unordered_map<string, int>& vec_model){
+    unordered_map<string, int> term_fr; 
     for(const string& text: buffer){
         //selects only words that already exist in the vocabulary, discarding unknown words.
         if(is_trained(text, vec_model)){
@@ -43,16 +53,6 @@ void frequency(vector<string>& buffer){
 
     for(auto it = term_fr.begin(); it != term_fr.end(); it++){
         cout << it->first << ":" << it->second << endl;
+        float tf = tf_calculation(term_fr, it-> second);
     }
-}
-
-float tf_calculation(const unordered_map<string, int>& term_fr){
-    float size = term_fr.size();
-    float fr; 
-    for(auto it = term_fr.begin(); it != term_fr.end(); it++){
-        fr += it->second;
-    }
-
-    float tf = size/fr;
-    return tf;
 }
