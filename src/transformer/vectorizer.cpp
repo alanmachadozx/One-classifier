@@ -29,9 +29,9 @@ unordered_map<string, int> dataset_map(){
     return string_id;
 }
 
- unordered_map<double, int> idf_map(){
+ unordered_map<double, string> idf_map(){
     const unordered_map<string, int>& trainer_map = dataset_map();
-    unordered_map<double, int> idf_id; //word idf, word id
+    unordered_map<double, string> idf_id; //word idf, word id
     int idx = 0; //total of sentences
     int w_in_str = 0; //how many sentences contain a specific word
     double idf;
@@ -45,7 +45,7 @@ unordered_map<string, int> dataset_map(){
             }
             //The minimum IDF value is 1.0, and the maximum value is proportional to the number of sentences in the training set.
             idf = log((1.0 + idx)/(1.0 + w_in_str)) + 1.0;
-            idf_id.insert({idf, it->second});
+            idf_id.insert({idf, it->first});
         }
     }
 
